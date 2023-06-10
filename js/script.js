@@ -12,17 +12,17 @@ const navbarCollapseDiv = document.getElementById('navbar-collapse');
 const navbarShowBtn = document.getElementById('navbar-show-btn');
 const navbarCloseBtn = document.getElementById('navbar-close-btn');
 
-// hien thanh menu navbar
+// view menu navbar
 navbarShowBtn.addEventListener('click', () => {
     navbarCollapseDiv.classList.add('navbar-collapse-rmw');
 });
 
-// an thanh menu navbar
+// close menu navbar
 navbarCloseBtn.addEventListener('click', () => {
     navbarCollapseDiv.classList.remove('navbar-collapse-rmw');
 });
 
-//an thanh khi click ra ngoai 
+// click screen to close 
 document.addEventListener('click', (e) => {
     if(e.target.id != "navbar-collapse" && e.target.id != "navbar-show-btn" && e.target.parentElement.id != "navbar-show-btn") {
         navbarCollapseDiv.classList.remove('navbar-collapse-rmw')

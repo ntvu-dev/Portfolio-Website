@@ -42,11 +42,6 @@
         font-size: 4rem;
     }
 
-    /* .header-form .form-control {
-        margin: 0 0.5rem;
-    } */
-
-    /* navbar */
     #navbar-show-btn {
         display: none;
     }
@@ -76,7 +71,6 @@
         margin-left: 2rem;
     }
 
-    /* thay doi khi cuon */
     .navbar-cng .navbar-nav .nav-link {
         color: var(--dark);
     }

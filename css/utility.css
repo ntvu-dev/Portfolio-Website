@@ -68,7 +68,6 @@ button, input [type = "submit"] {
     transition: var(--trans);
 }
 
-/* dừng transition và animation */
 .resize-animation-stopper *{
     animation: none!important;
     transition: none!important;

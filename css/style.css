@@ -109,7 +109,6 @@ header {
     min-height: 100vh;
     padding-top: 3rem;
     background: linear-gradient(rgba(0,0,0,0.3) , rgba(0,0,0,0.3)), url(/html/images/NTV_5440.jpg) center/cover no-repeat;
-    /* background-attachment: fixed; */
     background-position: center;
     flex-direction: column;
     color: #fff;
@@ -171,10 +170,8 @@ header {
     }
 }
 
-/* Thay doi back ground khi lan chuot */
 .navbar-cng {
     background-color: #fff;
-    /* box-shadow: 0px 4px 5px 0px rbg(48, 48, 48, 0.2); */
     transition: var(--trans);
     box-shadow: 0px 0px 20px -3px rgba(110, 110, 110, 0.6);
 }
@@ -198,11 +195,6 @@ footer {
     position: relative;
 }
 
-/* footer .py-4 {
-    padding-top: 0!important;
-    padding-bottom: 0!important;
-} */
-
 footer::before {
     content: "";
     position: absolute;
@@ -215,7 +207,6 @@ footer::before {
 
 footer .site-brand {
     margin: 1rem 0;
-    /* margin-bottom: 1rem; */
     display: block;
     font-size: 1.6rem!important;
 }
@@ -239,7 +230,6 @@ footer .site-brand {
 }
 
 .footer-item h2, h3 {
-    /* font-size: 1rem; */
     margin-bottom: 1.4rem;
     /* justify-content: center; */
 }
@@ -286,7 +276,7 @@ footer .site-brand {
     opacity: 0.3;
 }
 
-/* Portfolio Page */
+/* Portfolio */
 header.header-sm {
     min-height: 80vh;
 }
@@ -398,7 +388,7 @@ header.header-sm {
     color: #fff;
 }
 
-/* Blog Page */
+/* Blog */
 #blog {
     background-color: var(--line-grey);
 }
@@ -451,7 +441,7 @@ header.header-sm {
     opacity: 0.8;
 }
 
-/* About Page */
+/* About */
 .about-right .text {
     margin-bottom: 1rem;
 }

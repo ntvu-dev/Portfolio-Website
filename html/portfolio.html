@@ -52,6 +52,7 @@
     </nav>
     <!-- end nav -->
 
+    <!-- header -->
     <header class="flex header-sm">
         <div class="container">
             <div class="header-title">
@@ -137,6 +138,7 @@
             <img src="/images/DSCF5983.jpg">
         </div>
     </div>
+    <!-- end img -->
 
     <!-- footer -->
     <footer class="py-4">
@@ -145,8 +147,6 @@
                 <a href="index.html" class="site-brand">
                     NTVu_images
                 </a>
-                <!-- <p class="text">Đoạn văn bản</p> -->
-                <!-- <h2>Copyright @2023</h2> -->
                 <p>Copyright @2023</p>
             </div>
 
@@ -204,7 +204,6 @@
         </div>
     </footer>
 
-    <!-- js -->
     <script src="/js/script.js"></script>
     <script>
         const allPortfolioItem = document.querySelectorAll('.portfolio-item');
@@ -214,12 +213,15 @@
         const prevBtn = document.getElementById('prev-btn');
         let imgIndex = 0;
 
+        function showImageContent(index) {
+            imgModalDiv.querySelector('#img-modal img').src = `images/portfolio-${index}.jpg`;
+        }
+
         allPortfolioItem.forEach((portfolioItem) => {
             portfolioItem.addEventListener('click', () => {
                 imgModalDiv.style.display = "block";
                 let imgSrc = portfolioItem.querySelector('img').src;
                 imgIndex = parseInt(imgSrc.split("-")[1].substring(0, 1));
-                // console.log(imgSrc);
                 showImageContent(imgIndex);
             })
         });
@@ -239,10 +241,6 @@
             }
             showImageContent(imgIndex);
         });
-
-        function showImageContent(index) {
-            imgModalDiv.querySelector('#img-modal img').src = `images/portfolio-${index}.jpg`;
-        }
 
         modalCloseBtn.addEventListener('click', () => {
             imgModalDiv.style.display = "none";
